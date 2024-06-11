@@ -1,0 +1,300 @@
+body {
+  font-family: simply;
+  margin: 0;
+  padding: 0;
+  background-color: #faf9f6d0;
+  background-image: url(../images/6.jpg);
+  background-size: 40%;
+}
+header {
+  color: #fff;
+  text-align: center;
+}
+#barra-superior{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fffffff3;
+}
+div form{
+  justify-content: end;
+}
+nav a {
+  text-decoration: none;
+}
+#logo-completa{
+  font-family: title;
+}
+#restaurant{
+  color: #ffaf36 !important;
+  top: 2px;
+  left: 100px;
+}
+#filtro{
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.863);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+}
+#busca{
+  display: flex;
+  align-content: center !important;
+  font-family: sigma;
+}
+#bag{
+  padding-left:2vh;
+  padding-right:2vh;
+}
+#order{
+  padding-left:2vh;
+  padding-right:2vh;
+}
+#user{
+  padding-left:2vh;
+  padding-right:2vh;
+}
+ul #heartbar{
+  background-color: #e6e6e6;
+  border-top: solid 2px rgb(0, 0, 0);
+}
+#main{
+  font-family: simply;
+}
+#cardapio{
+  justify-content: center;
+  font-family: title;
+  font-size: 7vh;
+}
+#filtro{
+  font-family: sigma2;
+}
+#titulo-filtro{
+  font-family: sigma;
+}
+#filtrar{
+  align-items: center;
+  height: 2.1em;
+} 
+main {
+  padding-top: 1vh;
+}
+ul li{
+  list-style: none;
+}
+#preco{
+  font-size: 1em;
+}
+#interno-card{
+  display: flex;
+  align-items: center;
+}
+#externo-card{
+  cursor: pointer;
+  background-color: #ffffffe0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mais-icon{
+  top:  80%;
+  left: 90%;
+  cursor: pointer;
+}
+#categoria a{
+  color: black;
+}
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.offcanvas{
+  height: auto;
+}
+#icons-bottom{
+  background-color: #f3f3f3;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-bottom: -1vh;
+}
+@media (max-width: 992px) {  /*SÓ FUNCIONA NO CELULAR ISSO AQ TENDEU*/ 
+  body {
+    background-size: 80%;
+  }
+  #restaurant{
+    top: -1px;
+    left: 100px;
+  }
+  #icons-navbar2{
+    position: absolute;
+    opacity: 0;
+  }
+  #icons-bottom{
+   height: auto;
+   margin-bottom: -16px;
+  }
+  #bag, #home{
+    position: absolute;
+    left: 1px;
+    top: -100px;
+    pointer-events: none;
+  }
+  #busca{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    height: 0px;
+    width: 0px;
+  }
+  #ordenar{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #filtro{
+    margin-top: 3vh;
+  }
+  #cardapio{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    height: auto;
+    width: 300px;
+  }
+  #icons-bottom, #barra-superior {
+    will-change: auto;
+    transition: 0.4s !important;
+  }
+  #icons-bottom.hidden {
+    transform: translateY(100%); 
+  }
+  #barra-superior.hidden {
+    transform: translateY(-100%); 
+  }
+  #logo-img{
+    height: 70px;
+    width: 80px;
+  }
+  #externo-card{
+    height: 25%;
+  }
+  #interno-card{
+    height: 100%;
+  }
+  #imagem-comida{
+    border-radius: 9px !important;
+    margin: 3%;
+  }
+  #titulo-comida{
+    font-size: 1.15em;
+    height: 2.6em;
+  }
+  #descricao-comida{
+    font-size: 0.8em;
+    height: 4.5em;
+  }
+  #ordenar2{
+    width: 45vw;
+    margin-left: -11px;
+  }
+  #filtrar{
+    background-color: #ffffff !important;
+    margin-right: -23px;
+  }
+}
+@media screen and (min-width:992px) {  /*SÓ FUNCIONA NO PC ISSO AQ TENDEU*/ 
+  #barra-superior{
+    transition: top 99999999999s;
+  }
+  #interno-card{
+    height: 100%;
+  }
+  #filtro{
+    width: 22vw !important;
+    margin-top: -1.3vh;
+  }
+  #icons-bottom{
+    margin-bottom: -100px;
+    opacity: 0;
+  }
+  #icons-navbar{
+    pointer-events: none;
+  }
+  #ordenar2{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #busca{
+    width: 70%;
+  }
+  #botao-busca{
+    position: relative;
+    right: 3rem;
+  }
+  #imagem-comida{
+    border-radius: 9px !important;
+    margin: -1px;
+  }
+  #titulo-comida{
+    font-size: 1.15em;
+    height: 2.6em;
+  }
+  #descricao-comida{
+    font-size: 0.8em;
+    height: 4.5em;
+  }
+  #cardapio{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    height: auto;
+    padding: 5vh;
+    width: 400px;
+  }
+  #icones-importantes a:hover{
+    background-color: #3333331e;
+    border-radius: 10vh;
+    transition: 200ms
+  }
+  .offcanvas{
+    transition: 0.3s;
+  }
+  .offcanvas.hidden {
+    transform: translateY(100%); 
+  }
+}
+@font-face {
+  font-family: simply;
+  src: url(../fontes/NeverMindRounded/NeverMindRounded-Medium.ttf);
+}
+@font-face {
+  font-family: title;
+  src: url(../fontes/Courgette/Courgette-Regular.ttf);
+}
+@font-face {
+  font-family: madimiotf2;
+  src: url(../fontes/NeverMindRounded/NeverMindRounded-Regular.ttf);
+}
+@font-face {
+  font-family: never;
+  src: url(../fontes/NeverMindRounded/NeverMindRounded-DemiBold.ttf);
+}
+@font-face {
+  font-family: osvaldo;
+  src: url(../fontes/Oswald/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: one;
+  src: url(../fontes/Poetsen_One/PoetsenOne-Regular.ttf);
+}
+@font-face {
+  font-family: sigma;
+  src: url(../fontes/Signika/Signika-VariableFont_GRAD\,wght.ttf);
+}
+@font-face {
+  font-family: sigma2;
+  src: url(../fontes/Signika/static/Signika-Light.ttf);
+}
+@font-face {
+  font-family: exo;
+  src: url(../fontes/Exo/Exo-VariableFont_wght.ttf);
+}
